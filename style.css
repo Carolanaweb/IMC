@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(95, 139, 210, 0.702);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+   justify-content: end;
+}
+
+nav ul li{
+    margin: 0 150px;
+}
+
+nav ul li a{
+    color: aliceblue;
+
+}
+
+#inicio{
+    background-image: url(https://blog-prd.portalpos.com.br/wp-content/uploads/2022/04/saude-publica-familia-pos-graduacao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+header {
+    margin-left: 30em;
+   
+}

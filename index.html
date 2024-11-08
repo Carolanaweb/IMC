@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CuidarBem</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#IMC">O que é IMC?</a></li>
+            <li><a href="#Calculadora">Calcular seu IMC</a></li>
+    </nav>
+
+    <section id="inicio">
+        <header>
+            <h1>CuidarBem</h1>
+            <p>Você sabia que o IMC pode ser um alerta para sua saúde? Ele pode te ajudar, prevenindo doenças como diabetes,
+        hipertensão e problemas cardíacos. Que tal saber um pouco mais?</p>
+    
+        <button class="mais">Saibe Mais!</button>
+    </section>
+</header>
+
+
+    <section id="IMC">
+        <h2>Mas afinal o que é IMC?</h2>
+        <p>O IMC (Índice de Massa Corporal) é uma fórmula usada para avaliar se uma pessoa tem o peso adequado em relação à sua altura. O IMC é uma medida simples e amplamente utilizada para estimar o risco de problemas de saúde relacionados ao peso.
+
+        E a formula consiste em:    
+        </p>
+        <img src="https://drpaulopittelli.com.br/wp-content/uploads/2013/02/obesidade-IMC-1-1024x567.jpg" alt="imagem da formula do IMC">
+        <p>No entanto nem em todos os casos o IMC é preciso, pois ele não considera questões como a distribuição de gordura, a massa muscular ou a genética. <strong> É recomendavel que o IMC seja interpretado por um profissional como um nutricionista. </strong></p>
+    </section>
+
+    <section id="Calculadora">
+        <h2>Índice de Massa Corporal</h2>
+
+        <label for="altura"> Altura:</label>
+        <input type="number" name="altura" id="altura">
+
+        <label for="peso"> Peso (kg):</label>
+        <input type="number" name="peso" id="peso">
+
+        <button onclick="calcImc()"> Calcular IMC </button>
+
+        <p>Seu Índice de Massa corporal é: <span id="resultado"></span></p>
+
+    </section>
+
+
+   <footer></footer>
+
+
+
+
+    <script>
+        function calcImc() {
+            const altura = document.getElementById("altura").value;
+            const peso = document.getElementById("peso").value;
+            const resultado = peso / (altura ** 2);
+
+            document.getElementById("resultado").textContent = resultado.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>
